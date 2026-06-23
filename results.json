@@ -1,0 +1,124 @@
+{
+  "config": {
+    "mlkem_backend": "kyber-py (real ML-KEM)",
+    "n_rejection": 10000,
+    "n_distribution": 1000,
+    "n_evasion": 1000,
+    "lcover": 4096
+  },
+  "experiment_1": {
+    "512": {
+      "pk_success_rate": 0.5588,
+      "ct_success_rate": 0.5526,
+      "expected_ops": 3.5991762504368627,
+      "paper_pk": 0.56,
+      "paper_ct": 0.51,
+      "paper_ops": 3.7
+    },
+    "768": {
+      "pk_success_rate": 0.822,
+      "ct_success_rate": 0.8254,
+      "expected_ops": 2.4280788139585203,
+      "paper_pk": 0.83,
+      "paper_ct": 0.77,
+      "paper_ops": 2.5
+    },
+    "1024": {
+      "pk_success_rate": 0.6149,
+      "ct_success_rate": 0.6251,
+      "expected_ops": 3.2260247370015858,
+      "paper_pk": 0.62,
+      "paper_ct": 0.57,
+      "paper_ops": 3.4
+    },
+    "baseline": {
+      "success_rate": 0.5,
+      "expected_ops": 2.0
+    }
+  },
+  "experiment_2": {
+    "raw_mlkem768_pk": {
+      "mean_popcount": 3.7964192708333333,
+      "mean_msb_p": 2.6855729868544955e-06,
+      "pct_biased": 99.9,
+      "expected_verdict": "biased"
+    },
+    "kemeleon_encoded": {
+      "mean_popcount": 3.996884948096886,
+      "mean_msb_p": 0.4925749116658708,
+      "pct_biased": 0.0,
+      "expected_verdict": "random"
+    },
+    "obfs4_baseline": {
+      "mean_popcount": 3.99078125,
+      "mean_msb_p": 0.47957659834902344,
+      "pct_biased": 1.9,
+      "expected_verdict": "random"
+    }
+  },
+  "experiment_3": {
+    "obfs4_baseline": {
+      "client": 128,
+      "server": 128
+    },
+    "pq-obfs-512": {
+      "client": 1736,
+      "server": 992
+    },
+    "pq-obfs-768": {
+      "client": 2506,
+      "server": 1359
+    },
+    "pq-obfs-1024": {
+      "client": 3323,
+      "server": 1807
+    }
+  },
+  "experiment_4": {
+    "obfs4 (min pad)": {
+      "length": 128,
+      "num_segments": 1,
+      "segments": [
+        128
+      ]
+    },
+    "pq-obfs ML-512 (min pad)": {
+      "length": 1664,
+      "num_segments": 2,
+      "segments": [
+        1460,
+        204
+      ]
+    },
+    "pq-obfs ML-768 (min pad)": {
+      "length": 2308,
+      "num_segments": 2,
+      "segments": [
+        1460,
+        848
+      ]
+    },
+    "pq-obfs ML-1024 (min pad)": {
+      "length": 3232,
+      "num_segments": 3,
+      "segments": [
+        1460,
+        1460,
+        312
+      ]
+    },
+    "4096-normalized (all sets)": {
+      "length": 4096,
+      "num_segments": 3,
+      "segments": [
+        1460,
+        1460,
+        1176
+      ]
+    }
+  },
+  "experiment_5": {
+    "kemeleon_pct_random": 100.0,
+    "raw_mlkem_pct_random": 0.1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Go 1.25 crypto/mlkem (FIPS 203 standard library)",
+  "n_keys": 1000,
+  "raw_mlkem768": {
+    "detection_rate_pct": 100.0,
+    "mean_chi2": 312.11822222222224,
+    "median_chi2": 311.55555555555554,
+    "min_chi2": 225.33333333333331,
+    "max_chi2": 416.8888888888889,
+    "mean_msb_fraction": 0.385078125
+  },
+  "kemeleon_encoded": {
+    "n_encoded": 1000,
+    "evasion_rate_pct": 100.0,
+    "mean_chi2": 254.4226989619377,
+    "median_chi2": 253.32871972318335,
+    "mean_msb_fraction": 0.4999909090909091
+  }
+}
