@@ -1,3 +1,18 @@
+# pq-obfs: Kemeleon reference (Python)
+
+Standalone Kemeleon implementation over the ML-KEM-768 key structure, using
+kyber-py. Accompanies the paper *"Cryptographic Fingerprints in Tor Pluggable
+Transports"* (AlOmar & Trabelsi).
+
+## Reproducing the paper's results
+
+    pytest
+
+Expected: all 34 tests pass, the ~27% byte-chi-squared baseline, and the
+100% / 0% MSB detection results (raw vs. Kemeleon-encoded keys).
+
+---
+
 # pq-obfs Prototype
 
 A self-contained Python research prototype that implements and **empirically
