@@ -41,7 +41,7 @@ PAPER_TABLE_V = {
     "pq-obfs ML-512 (min pad)": 1664,
     "pq-obfs ML-768 (min pad)": 2308,
     "pq-obfs ML-1024 (min pad)": 3232,
-    "4096-normalized (all sets)": 4096,
+    "4096-normalized (all sets)": 4112,
 }
 
 
